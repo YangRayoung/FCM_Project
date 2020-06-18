@@ -1,0 +1,28 @@
+*{margin:0; padding:0;}/* 객체에 기본으로 적용된 마진과 패딩 초기화 */
+:root {--back_color : #eae7d5}
+
+body{background: var(--back_color)}
+#menu{ height:50px;overflow: hidden; margin:10px 0 0 0 ;}
+button{background:none; border:none;}
+.logo{float:left; }
+.logo > img{width:100px; padding : 0 0 0 15px;}
+
+.menu1{margin:18px; }
+.menu1 > button{width:230px; font-size: 17px;}
+
+
+#intro {height: 600px; margin:10px auto; overflow: hidden; text-align: center;}
+.no1 {float : left; margin: 150px 0 0 110px;}
+.no1 > img{width: 220px;}
+.no1 > h2{padding : 10px 0 0 0 ; }
+.no1 > p{padding : 5px 0 0 0;}
+
+.no2 {  position: absolute; top: 205px; left : 615px;}
+.no2 > img{width: 325px;}
+.no2 > h2{padding : 12px 0 0 0 ; }
+.no2 > p{padding : 5px 0 0 0;}
+
+.no3 {float : right; margin: 150px 110px 0 0 }
+.no3 > img{width: 320px;}
+.no3 > h2{padding : 10px 0 0 0 ;}
+.no3 > p{padding : 5px 0 0 0;}

@@ -1,0 +1,13 @@
+@charset "EUC-KR";
+
+*{margin:0; padding:0;}/* 객체에 기본으로 적용된 마진과 패딩 초기화 */
+:root {--back_color : #eae7d5}
+
+body{background: var(--back_color)}
+#menu{ height:50px;overflow: hidden; margin:10px 0 0 0 ;}
+button{background:none; border:none;}
+.logo{float:left; }
+.logo > img{width:30px; padding : 5px 0 0 10px;}
+.logo > button{ position: absolute; top: 22px; left: 45px; font-size : 20px}
+.menu1{margin:10px; }
+.menu1 > button{width:230px; font-size: 17px;}

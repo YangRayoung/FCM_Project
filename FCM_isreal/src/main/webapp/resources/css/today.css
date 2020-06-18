@@ -1,0 +1,30 @@
+*{margin:0; padding:0;}
+:root {--back_color : #eae7d5}
+
+body{background: var(--back_color)}
+#menu{ height:50px;overflow: hidden; margin:10px 0 0 0 ;}
+button{background:none; border:none;}
+.logo{float:left; }
+.logo > img{width:100px; padding : 0 0 0 15px;}
+
+.menu1{margin:18px; }
+.menu1 > button{width:230px; font-size: 17px;}
+
+
+#heejin{height: 600px; background: var(--back_color); margin:10px auto; overflow: hidden;} /* 무조건 영역안에서 내용을 다 표시하게 함. float(부모를 빠져나가버리는 현상)을 해제시킴 */
+h2{color:black; text-align: center;}
+
+.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+   .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+   .customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+   .customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
+   .customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+
+
+.map{float:left; width:1100px; padding:15px; margin:30px 0 0 50px; border-radius: 20px 20px 20px 20px;}
+.sta{float:right; width:500px; height:500px; padding:15px; margin:30px 50px 0 0; background:#f08080; border-radius: 20px 20px 20px 20px; }
+.sta p{position: absolute; left : 67%; margin: 30px 0 0 0 ;}
+#heejin > p{color:black; clear:both;} /* float속성 둘다(both: left, right)해제 */
+
+.btn{position: absolute; top: 95%; left: 50%; transform: translate(-50%,-50%); width:300px; height:50px; color:#f08080; display: inline;  }
+btn2{display: inline-block; background: #f08080; padding: 10px 100px; color:black; }
