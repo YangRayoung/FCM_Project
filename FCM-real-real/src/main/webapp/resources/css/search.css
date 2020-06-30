@@ -1,0 +1,54 @@
+@charset "EUC-KR";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{margin:0; padding:0;}/* 객체에 기본으로 적용된 마진과 패딩 초기화 */
+:root {--back_color : #eae7d5; font-family: 'Nanum Gothic', sans-serif;}
+
+body{background: var(--back_color)}
+#menu{ overflow: hidden; margin:10px 0 0 0 ;}
+button{background:none; border:none;}
+.logo{float:left; }
+.logo > img{width:100px; padding : 0 0 0 15px;}
+
+
+.menu1{margin:18px; }
+.menu1 > button{width:15%; font-size: 100%;}
+#heejin_table{width: 55%; float: left; margin: 0.5% 0 0 0; padding: 0 0 3% 0 ;  }
+#heejin_pic{width: 30%; float:left; margin: 8% 0 0 0 ; background: rgb(238,237,223); border-radius: 30px; margin: 4% 0 0 0;}
+#heejin_pic > h3{text-align: center; margin: 5% 0 0 1%; }
+#heejin_pic > img{margin: 0 0 0 6% ; }
+
+h2{text-align: center; margin: 10px 0 25px 0 ;}
+
+#a_table {
+	margin: 30px 0 0 0;
+}
+
+.scrolltbody {
+	display: block;
+	width: 641px;
+	border-collapse: collapse;
+	border: none;
+	height: 181px;
+}
+
+.scrolltbody th {
+	border: 1px solid #000;
+	background: pink;
+	width: 100px;
+	height: 30px; 
+}
+
+.scrolltbody td {
+	border: 1.5px solid #000;
+	border-top: 0;
+	width: 100px;
+	height: 30px; 
+}
+
+.scrolltbody tbody {
+	display: block;
+	overflow: auto;
+	width: 641px;
+	height: 540px;  
+}

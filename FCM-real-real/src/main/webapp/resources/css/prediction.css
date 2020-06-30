@@ -1,0 +1,34 @@
+@charset "EUC-KR";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+*{margin:0; padding:0;}/* 객체에 기본으로 적용된 마진과 패딩 초기화 */
+:root {--back_color : #eae7d5; font-family: 'Nanum Gothic', sans-serif;}
+
+body{background: var(--back_color)}
+#menu{ overflow: hidden; margin:10px 0 0 0 ;}
+button{background:none; border:none;}
+.logo{float:left; }
+.logo > img{width:100px; padding : 0 0 0 15px;}
+
+
+.menu1{margin:18px; }
+.menu1 > button{width:15%; font-size: 100%;}
+
+#h_pre{background: rgb(238,237,223); border-radius: 20px; text-align:center; margin: 2% 0 30px 0 ;}
+.heejin_left{ padding: 1% 0 0 0; width:40%; height: 52%; background: rgb(238,237,223); border-radius: 50px; text-align:center; margin: 0 5% 0 5%;  float: left;}
+.heejin_left > h2{margin: 0 0 10px 0 ;}
+.heejin_right{padding: 1% 0 0 0 ;width:40%;height: 52%; background: rgb(238,237,223); border-radius: 50px; text-align:center; margin: 0 5% 0 0 ; float: left;}
+.heejin_right > h4{margin: 20% 0 10px 0 ;  }
+.heejin_right > p{margin: 5px 0 0 0;}
+
+#heejin_all{ text-align: center; width: 90%; margin: auto;}
+.waste_A{float:left; width:20%; padding: 1% 0 0 0 ;}
+.waste_A > p{margin: 7px 0 0 0 ; font-weight: bold; font-size: 18px; }
+.waste_B{float:left; width:20%; padding: 1% 0 0 0 ;}
+.waste_B > p{margin: 7px 0 0 0 ; font-weight: bold; font-size: 18px; }
+.waste_C{float:left;width:20%; padding: 1% 0 0 0 ;}
+.waste_C > p{margin: 7px 0 0 0 ; font-weight: bold; font-size: 18px; }
+.waste_D{float:left;width:20%; padding: 1% 0 0 0 ;}
+.waste_D > p{margin: 7px 0 0 0 ; font-weight: bold; font-size: 18px; }
+.waste_E{float:left;width:20%; padding: 1% 0 0 0 ;}
+.waste_E > p{margin: 7px 0 0 0 ; font-weight: bold; font-size: 18px; }
+
