@@ -9,7 +9,8 @@ public class heejin1 {
 	   //public static int[][] cost = { {0,4,3,4,5,7},{4,0,5,4,5,8},{3,5,0,3,2,5},{4,4,3,0,2,5},{5,5,2,2,0,3},{7,8,5,5,3,0} };
 	   public static int[][] cost = { {0,532,1700,2500,2200,2900},{640,0,1600,2400,2900,2700},{1900,2000,0,1100,1700,1100},{3100,3200,1500,0,1700,945},{1900,2000,1300,1700,0,2400},{3200,3300,1200,844,2400,0} };
 	   public static int[] population = {4904, 5573, 9236, 2012, 14379};
-	   
+	   public static int[] population_heejin = {6625, 3124, 6922, 6343, 3673}; 
+	
 	   public static int[][] cost2 = new int[6][6]; 
 	   public static boolean[] visited = new boolean[6];
 	   public static int[] stack = new int[8]; 
@@ -57,6 +58,20 @@ public class heejin1 {
 			   cal_j[i] = population[i]/10000 + cost_home[i]*0.95; 
 		   }
 	   }
+	 public static void cal_heejin()
+	{
+		for(int i=0;i<5; i++)
+		{
+			if(i==1 || i==4) //í‰ê·  ì ì€ ê³³! 
+			{
+				importan_h[i] = 55 - population_heejin[i]/500;
+			}
+			else
+			{
+				importan_h[i] = 50 - population_heejin[i]/500;
+			}
+		}
+	}
 	   public static void cal_importance()
 	   {
 	      for(int i =0; i<5; i++)
@@ -78,7 +93,7 @@ public class heejin1 {
 	      {
 	         if(importance[i]>=50)
 	         {
-	        	today_[i] = 1; //¿À´ÃÀÇ ¼ö°ÅÀÏÁ¤ È®ÀÎÇÏ±â¿¡ ÀÌ¿ë
+	        	today_[i] = 1; //ì˜¤ëŠ˜ì˜ ìˆ˜ê±°ì¼ì • í™•ì¸í•˜ê¸°ì— ì´ìš©
 	            input[num] = i+1;
 	            num++;
 	         }
@@ -106,7 +121,7 @@ public class heejin1 {
 	         stack[i]=0;
 	   }
 	   
-	   public static void input_num() //¹æ¹®ÇÒ ¾²·¹±âÅë °³¼ö,À§Ä¡ È®ÀÎ ÀÛ¾÷? 
+	   public static void input_num() //ë°©ë¬¸í•  ì“°ë ˆê¸°í†µ ê°œìˆ˜,ìœ„ì¹˜ í™•ì¸ ì‘ì—…? 
 	   {
 	      
 	      for(int i =0; i<num; i++)
@@ -122,7 +137,7 @@ public class heejin1 {
 	      for(int i=0; i<num; i++)
 	         visited[i] = false; 
 	   }
-	   //6À» numÀ¸·Î ¼öÁ¤ 
+	   //6ì„ numìœ¼ë¡œ ìˆ˜ì • 
 	   public static void tsp(int node, int costSum, int count)
 	   {
 	      visited[node] = true;
@@ -139,7 +154,7 @@ public class heejin1 {
 	         if(costSum < lowCost)
 	         {
 	            lowCost = costSum;
-	            System.arraycopy(stack,0,answer,0,6);  //¸¶Áö¸·¿¡ sizeof(stack) µé¾î°¡¾ß ÇÔ ÀÏ´Ü 6À¸·Î ³õÀ½. 8Àº ¾ÈµÊ ŸÓ? 
+	            System.arraycopy(stack,0,answer,0,6);  //ë§ˆì§€ë§‰ì— sizeof(stack) ë“¤ì–´ê°€ì•¼ í•¨ ì¼ë‹¨ 6ìœ¼ë¡œ ë†“ìŒ. 8ì€ ì•ˆë¨ ÂŸ? 
 	            
 	         }
 	         --size;
@@ -193,7 +208,7 @@ public class heejin1 {
 	         
 	      }
 	   }*/
-	   //heejin0()Àº Ç×»ó 0ÀÌ´Ï±î »ı·«? 
+	   //heejin0()ì€ í•­ìƒ 0ì´ë‹ˆê¹Œ ìƒëµ? 
 	   public static int heejin1()
 	   {
 	      return input[answer[1]];
